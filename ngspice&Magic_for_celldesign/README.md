@@ -25,6 +25,10 @@ PMOS
 
 ![image](https://github.com/user-attachments/assets/cf3f2f99-c928-42f7-a1be-e4b80a2a03de)
 
+
+
+![image](https://github.com/user-attachments/assets/e51dbc06-b3fd-4bed-95b3-c8ab84971f71)
+
 Commands for ngspice simulation
 
 ngspice sky130_inv.spice
