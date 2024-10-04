@@ -53,6 +53,34 @@ cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/de
 ![image](https://github.com/user-attachments/assets/f3918e51-314b-4c93-8c24-2ef7117c4dd0)
 
 
+ Run openlane flow synthesis with newly inserted custom inverter cell.
+
+/flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+run_synthesis
+
+![image](https://github.com/user-attachments/assets/7117302f-9665-4021-9329-16226d4fd32b)
+
+
+![image](https://github.com/user-attachments/assets/e5591aaa-5864-4367-a9e8-c329c1ce0469)
+
+
+
+![image](https://github.com/user-attachments/assets/7057b800-63a8-4820-8c36-f6373791c8ba)
+
+
+
+![image](https://github.com/user-attachments/assets/a783618b-1402-460f-9dee-91bce6e180d8)
+
+![image](https://github.com/user-attachments/assets/353871ce-4878-4dac-a038-c35eecf0ad8a)
+
+
+
+
+
 
 
 
