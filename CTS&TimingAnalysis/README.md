@@ -24,27 +24,19 @@ Condition 3: Height of the standard cell should be even multiples of the vertica
 Save the finalized layout with custom name and open it.
 Command for tkcon window to save the layout with custom name
 
-# Command to save as
 save sky130_vsdinv.mag
-Command to open the newly saved layout
-
-# Command to open custom inverter layout in magic
 magic -T sky130A.tech sky130_vsdinv.mag &
 
 Generate lef from the layout.
 Command for tkcon window to write lef
 
-# lef command
 lef write
 ![image](https://github.com/user-attachments/assets/2a103142-3e34-4732-8169-1441ba654446)
 
 
 
 Copy the newly generated lef and associated required lib files to 'picorv32a' design 'src' directory.
-# Copy lef file
 cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
-
-# Copy lib files
 cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 
 ![image](https://github.com/user-attachments/assets/5cfd918e-d7d3-4e6d-af7e-4ad3d54a8879)
@@ -80,7 +72,20 @@ run_synthesis
 
 
 
+Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.
+run_floorplan
+
+
+![image](https://github.com/user-attachments/assets/027395fb-2f89-47a2-b5d2-e509bb8321ff)
 
 
 
+Rerunning floorplan again with sub-commands
+
+init_floorplan
+place_io
+tap_decap_or
+Screenshots of commands run
+
+![image](https://github.com/user-attachments/assets/e09af43f-9021-4070-af25-4bbc8401ec80)
 
