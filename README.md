@@ -26,3 +26,5 @@ Synthesis utilizatoin report
 
 
 
+# Acknowledgements
+Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
